@@ -65,9 +65,17 @@
             "name": "postTitleOffset",
             "label": "Post Title position offset",
             "group": "Layout",
-            "note": "Toffset value in rem",
+            "note": "Offset value in rem",
             "value": "2",
             "type": "text"
+        },
+        {
+            "name": "responsiveImages",
+            "group": "Layout",
+            "note": "False Improves Image Quality, but can increase Site Loading Time.",
+            "label": "Responsive Images",
+            "value": true,
+            "type": "checkbox"
         },
         {
             "name": "primaryColor",
