@@ -545,6 +545,10 @@ sup {
 @media only screen and (min-width: 60em) {
     .logo {
         max-width: 20rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0 5rem 0 0;
     }
 }
 
@@ -596,6 +600,7 @@ nav a span {
 
 .top {
     position: relative;
+    margin: 0 0 3rem 0;
 }
 
 .hero {
