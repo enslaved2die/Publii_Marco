@@ -88,11 +88,13 @@ var generateOverride = function (params) {
         output += `
         a {
                color: ${params.linkColor};
+               fill: ${params.linkColor};
         }
         .post__entry a:hover,
         .post__entry a:active,
         .post__entry a:focus {
                color: ${params.linkColor};
+               fill: ${params.linkColor};
         }`;
     }
 
@@ -102,12 +104,15 @@ var generateOverride = function (params) {
         a:active,
         a:focus {
                color: ${params.linkHoverColor};
+               fill: ${params.linkHoverColor};
         }
         .post__entry a {
                color: ${params.linkHoverColor};
+               fill: ${params.linkHoverColor};
         }
         .post__nav__link:hover h5 {
                color: ${params.linkHoverColor};
+               fill: ${params.linkHoverColor};
         }`;
     }
 

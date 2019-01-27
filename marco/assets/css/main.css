@@ -97,15 +97,18 @@ a {
 }
 
 a:hover {
-    color: #3949ab;
+    color: #751aff;
+    fill: #751aff;
 }
 
 a:active {
-    color: #751AFF;
+    color: #751aff;
+    fill: #751aff;
 }
 
 a:focus {
-    color: #3949ab;
+    color: #751aff;
+    fill: #751aff;
 }
 
 p,
@@ -652,4 +655,27 @@ nav a span {
 
 .post__footer {
     font-size: 0.8em;
+}
+
+/*Pagination*/
+.pagination {
+    width: 100%;
+    max-width: 20vh;
+    text-align: center;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "prev next";
+}
+
+.prev {
+    grid-area: prev;
+}
+
+.next {
+    grid-area: next;
+}
+
+.pagination a {
+    background-color: inherit;
 }

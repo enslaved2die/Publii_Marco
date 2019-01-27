@@ -1,19 +1,15 @@
 {{#if @pagination}}
     <nav class="pagination">
-        {{#if @pagination.nextPage}}
-            <a
-                href="{{@pagination.nextPageUrl}}"
-                class="btn"
-                title="{{ translate 'partials.pagination.prev' }}">
-                {{ translate 'partials.pagination.prev' }}
+        {{#if @pagination.previousPage}}
+            <a href="{{@pagination.previousPageUrl}}" class="prev" title="{{ translate 'partials.pagination.prev' }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" transform="rotate(180)">
+                    <path d=" M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z" /></svg>
             </a>
         {{/if}}
-        {{#if @pagination.previousPage}}
-            <a
-                href="{{@pagination.previousPageUrl}}"
-                class="btn"
-                title="{{ translate 'partials.pagination.next' }}">
-                {{ translate 'partials.pagination.next' }}
+        {{#if @pagination.nextPage}}
+            <a href="{{@pagination.nextPageUrl}}" class="next" title="{{ translate 'partials.pagination.next' }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z" /></svg>
             </a>
         {{/if}}
     </nav>
