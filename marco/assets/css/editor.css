@@ -1,0 +1,257 @@
+/* 
+ * We can add our own CSS rules to the WYSIWYG editor; thanks to this we can style the post directly in the post editor to match the theme's style.
+ */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+.post__image--left {
+    float: left;
+    margin-right: calc(1.86667rem + 0.5vw);
+    max-width: 50%;
+}
+
+.post__image--right {
+    float: right;
+    margin-left: calc(1.86667rem + 0.5vw);
+    max-width: 50%;
+}
+
+.post__image--center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.post__image--wide {
+    text-align: center;
+}
+
+.post__image--full {
+    text-align: center;
+}
+
+.msg {
+    padding: 1.06667rem 1.6rem;
+}
+
+.msg--highlight {
+    background-color: #fff7e5;
+}
+
+.msg--info {
+    background-color: #d9edf7;
+}
+
+.msg--success {
+    background: #d5efc2;
+}
+
+.dropcap:first-letter {
+    float: left;
+    font-size: 3.65324rem;
+    font-family: "Montserrat";
+    line-height: 0.6;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+p {
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.6
+}
+
+a {
+    color: #343434;
+    text-decoration: none;
+    -webkit-transition: all 0.24s ease-out;
+    -o-transition: all 0.24s ease-out;
+    transition: all 0.24s ease-out;
+}
+
+a:hover {
+    color: #3949ab;
+}
+
+a:active {
+    color: #3949ab;
+}
+
+a:focus {
+    color: #3949ab;
+}
+
+p,
+ul,
+ol,
+dl,
+table {
+    margin-top: -webkit-calc(1.33333rem + 0.5vw);
+    margin-top: calc(1.33333rem + 0.5vw);
+}
+
+blockquote,
+figure {
+    margin-top: -webkit-calc(1.86667rem + 0.5vw);
+    margin-top: calc(1.86667rem + 0.5vw);
+    margin-bottom: -webkit-calc(1.86667rem + 0.5vw);
+    margin-bottom: calc(1.86667rem + 0.5vw);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: -webkit-calc(1.86667rem + 0.5vw);
+    margin-top: calc(1.86667rem + 0.5vw);
+}
+
+h1 {
+    font-size: 1.67583rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.29454rem;
+}
+
+h3 {
+    font-size: 1.13778rem;
+}
+
+h4 {
+    font-size: 1.06667rem;
+}
+
+h5 {
+    font-size: 0.9375rem;
+}
+
+h6 {
+    font-size: 0.87891rem;
+}
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+    margin-top: -webkit-calc(0.8rem + 0.25vw);
+    margin-top: calc(0.8rem + 0.25vw);
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+blockquote {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding: 0 15%;
+}
+
+blockquote cite {
+    color: #343434;
+    display: block;
+    font-family: "Montserrat", serif;
+    font-size: 0.87891rem;
+    font-style: normal;
+    padding-top: 0.53333rem;
+}
+
+blockquote > :nth-child(1) {
+    margin-top: 0;
+}
+
+blockquote:before {
+    display: block;
+    height: 0;
+    content: "“";
+    margin-left: -.55em;
+    font: normal 400%/0.9 "Montserrat", sans-serif;
+    color: #e3e3e3;
+}
+
+@media all and (min-width: 37.5em) {
+    blockquote:before {
+        margin-left: -.85em;
+    }
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+}
+
+ul > li,
+ol > li {
+    list-style: inherit;
+    padding: 0.26667rem 0 0 1.06667rem;
+}
+
+dl dt {
+    font-weight: 700;
+}
+
+pre {
+    margin: -webkit-calc(1.06667rem + 0.25vw) 0 0;
+    margin: calc(1.06667rem + 0.25vw) 0 0;
+    padding: 1.6rem 3.2rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code,
+pre {
+    background-color: #f6f6f6;
+    font-family: "Monaco", "Courier New", monospace;
+    font-size: 0.9375rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    vertical-align: top;
+    text-align: left;
+    white-space: nowrap;
+}
+
+table th {
+    border-bottom: 2px solid #e3e3e3;
+    padding: 0.8rem 1.33333rem;
+}
+
+table tr:nth-child(2n) {
+    background: whitesmoke;
+}
+
+table td {
+    padding: 0.8rem 1.33333rem;
+}
+
+figcaption {
+    color: #908e98;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.77248rem;
+    margin: 1.06667rem 0 0;
+    text-align: center;
+}
+
+sub,
+sup {
+    font-size: 65%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ @website.language }}">
+
+<head>
+    {{!-- Global site tag (gtag.js) - Google Analytics --}}
+    {{#if @config.custom.trackingID}}
+        <script type="{{ gdprScriptBlocker "analytical"}}" async src="https://www.googletagmanager.com/gtag/js?id={{@config.custom.trackingID}}"></script>
+        <script type="{{ gdprScriptBlocker "analytical"}}">
+            window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{@config.custom.trackingID}}');
+</script>
+    {{/if}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{@config.custom.primaryColor}}">
+    {{#if title}}
+        <title>{{title}}</title>
+    {{else}}
+        <title>{{@website.name}}</title>
+    {{/if}}
+    {{metaDescription}}
+    {{metaRobots}}
+    {{!--{{canonicalLink}}
+    {{ampLink}}
+    {{feedLink}}
+    {{socialMetaTags}}--}}
+    {{#if @config.custom.faviconUpload}}
+        <link rel="shortcut icon" href="{{@config.custom.faviconUpload}}" type="{{@config.custom.faviconExtension}}" />
+    {{/if}}
+    {{#if @pagination}}
+        {{#if @pagination.previousPage}}
+            <link rel="prev" href="{{@pagination.previousPageUrl }}">
+        {{/if}}
+        {{#if @pagination.nextPage}}
+            <link rel="next" href="{{@pagination.nextPageUrl }}">htn
+        {{/if}}
+    {{/if}}
+    <link rel="stylesheet" href="{{css "style.css" }}">
+    <link rel="stylesheet" href="{{font @config.custom.headlineFont}}:{{@config.custom.headlineFontWeight}}|{{@config.custom.textFont}}:{{@config.custom.textFontWeight}}" />
+    {{!--{{jsonLD}}--}}
+    {{!-- Insert some custom code by Custom HTML tool --}}
+    {{{@headCustomCode}}}
+</head>
+
+<body>
+    {{!-- Insert some custom code by Custom HTML tool --}}
+    {{{@bodyCustomCode}}}
+    <div class="container">
+        <header class="top">
+            <a class="logo" href="{{@website.url}}">
+                {{#if @website.logo}}
+                    <img src="{{@website.logo}}" alt="{{@website.name}}">
+                {{else}}
+                    {{@website.name}}
+                {{/if}}
+            </a>
+            {{> menu menus.mainMenu}}
+            {{#if @config.custom.heroText}}
+                <div class="hero">
+                    <div class="hero--text">
+                        {{{@config.custom.heroText}}}
+                    </div>
+                </div>
+            {{/if}}
+        </header>

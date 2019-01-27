@@ -1,0 +1,33 @@
+{{> head}}
+<main class="main--grid">
+    {{#if featuredPosts}}
+        {{#each featuredPosts}}
+            {{#checkIf @index '<' 3}}
+                <article class="article">
+                    {{#featuredImage}}
+                        {{#if url}}
+                            <img src="{{url}}" sizes="{{sizes.listing}}" srcset=" {{srcset.listing}}" alt=" {{alt}}">
+                            <a href=" {{../url}}" class="overlay">
+                        {{/if}}
+                    {{/featuredImage}}
+                    <h1>{{title}}</h1>
+                    </a>
+                </article>
+            {{/checkIf}}
+        {{/each}}
+    {{/if}}
+    {{#each posts}}
+        <article class="article">
+            {{#featuredImage}}
+                {{#if url}}
+                    <img src="{{url}}" sizes="{{sizes.listing}}" srcset=" {{srcset.listing}}" alt=" {{alt}}">
+                    <a href=" {{../url}}" class="overlay">
+                {{/if}}
+            {{/featuredImage}}
+            <h1>{{title}}</h1>
+            </a>
+        </article>
+    {{/each}}
+    {{> pagination}}
+</main>
+{{> footer}}

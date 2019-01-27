@@ -1,0 +1,34 @@
+<footer class="footer u-small">
+    {{#if @config.custom.copyrightText}}
+        <div class="footer__copyright">
+            {{{@config.custom.copyrightText}}}
+        </div>
+    {{/if}}
+</footer>
+</div>{{!-- .container --}}
+{{!--<script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" aria-dropeffect="" crossorigin="anonymous"></script>--}}
+{{!-- Insert some custom code by Custom HTML tool --}}
+{{{@footerCustomCode}}}
+{{!-- GDPR Cookie popup generated natively by Publii app --}}
+{{{ publiiFooter }}}
+<script>
+    function unescapeHtml(unsafe) {
+        return unsafe
+            .replace(/&amp;/g, "&")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&quot;/g, '"')
+            .replace(/&#039;/g, "'")
+
+    }
+    var x = document.getElementsByClassName("noescape");
+    console.log("noescape Count:" + document.getElementsByClassName("noescape").length);
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].innerHTML = unescapeHtml(x[i].innerHTML);
+    }
+
+</script>
+</body>
+
+</html>
