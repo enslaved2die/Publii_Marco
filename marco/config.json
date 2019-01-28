@@ -1,7 +1,7 @@
 {
     "name": "Marco",
-    "version": "0.9.0.0",
-    "author": "TidyCustoms <https://tidycustoms.net/>",
+    "version": "1.0.0.0",
+    "author": "Joshua Sellke <http://www.sellke.net/>",
     "menus": {
         "mainMenu": "Main menu"
     },

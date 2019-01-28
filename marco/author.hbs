@@ -1,24 +1,26 @@
 {{> head}}
-
-<main class="main--grid">
-    <div class="page-header page-header--listing author">
-        {{#author}}
-            {{#if avatar}}
+<hr class="article__spacer">
+<main class="main--author">
+    {{#author}}
+        {{#if avatar}}
+            <article class="author--avatar">
                 <img src="{{avatar}}" class="author__avatar" alt="{{name}}">
-            {{/if}}
-            <h1 class="page-header__title">
+            </article>
+        {{/if}}
+        {{!-- <h1 class="page-header__title">
                 {{name}}
                 <sup>({{postsNumber}} {{ translate "listing.post" (math postsNumber '+' 0)}})</sup>
-            </h1>
-            {{#if description}}
-                <p class="page-header__desc">
+            </h1>--}}
+        {{#if description}}
+            <article class="author-desc">
+                <p>
                     {{description}}
                 </p>
-            {{/if}}
-        {{/author}}
-    </div>{{!-- .page-header --}}
+            </article>
 
-    {{#each posts}}
+        {{/if}}
+    {{/author}}
+    {{!-- {{#each posts}}
         <article class="article">
             {{#featuredImage}}
                 {{#if url}}
@@ -59,7 +61,7 @@
 
             </header>
         </article>
-    {{/each}}
+    {{/each}} --}}
 
     {{> pagination}}
 </main>

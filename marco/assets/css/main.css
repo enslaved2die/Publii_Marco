@@ -364,12 +364,23 @@ sup {
     margin: auto;
 }
 
-.main--grid {
+.main--grid,
+.main--author {
     display: grid;
 }
 
+.main--author {
+    grid-gap: 2rem;
+}
+
+.main--author p {
+    margin: 0;
+}
+
 @media only screen and (min-width: 20em) {
-    .main--grid {
+
+    .main--grid,
+    .main--author {
         grid-template-columns: repeat(6, 1fr);
     }
 
@@ -377,13 +388,22 @@ sup {
         grid-column: span 6;
     }
 
-    .main--full {
+    .main--author > article {
+        grid-column: span 6;
+    }
+
+    .main--full,
+    .main--author {
         margin: 2rem 3rem;
     }
+
+
 }
 
 @media only screen and (min-width: 37.5em) {
-    .main--grid {
+
+    .main--grid,
+    .main--author {
         grid-template-columns: repeat(6, 1fr);
     }
 
@@ -391,31 +411,49 @@ sup {
         grid-column: span 3;
     }
 
-    .main--full {
+    .main--author > article {
+        grid-column: span 3;
+    }
+
+    .main--full,
+    .main--author {
         border-top: 1rem;
         padding: 3vw;
         max-width: 60rem;
         margin: auto;
     }
+
 }
 
 @media only screen and (min-width: 60em) {
-    .main--grid {
+
+    .main--grid,
+    .main--author {
         grid-template-columns: repeat(6, 1fr);
     }
 
     .main--grid > article {
         grid-column: span 2;
+    }
+
+    .main--author > article {
+        grid-column: span 3;
     }
 }
 
 @media only screen and (min-width: 80em) {
-    .main--grid {
+
+    .main--grid,
+    .main--author {
         grid-template-columns: repeat(6, 1fr);
     }
 
     .main--grid > article {
         grid-column: span 2;
+    }
+
+    .main--author > article {
+        grid-column: span 3;
     }
 }
 
