@@ -47,6 +47,12 @@ var generateOverride = function (params) {
                font-weight: ${params.textFontWeight};
         }`;
     }
+    if (params.heroFontWeight !== '500') {
+        output += `
+        .hero{
+               font-weight: ${params.heroFontWeight};
+        }`;
+    }
 
     if (params.headingColor !== '#343434') {
         output += `

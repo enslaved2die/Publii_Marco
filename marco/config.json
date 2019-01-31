@@ -116,7 +116,7 @@
             "name": "headlineFont",
             "label": "Heading",
             "group": "Fonts",
-            "note": "Enter a Google Font Typeface Name. e.g. Roboto:400,700",
+            "note": "Enter a Google Font Typeface Name. e.g. Montserrat",
             "value": "Staatliches",
             "type": "text"
         	},
@@ -129,11 +129,18 @@
             "type": "text"
         },
         {
+            "name": "separator",
+            "type": "separator",
+            "label": " ",
+            "group": "Fonts",
+            "size": "smaller"
+         },
+        {
             "name": "textFont",
             "label": "Text",
             "group": "Fonts",
-            "note": "Enter a Google Font Typeface Name. e.g. Roboto:400,700",
-            "value": "Oswald",
+            "note": "Enter a Google Font Typeface Name. e.g. Montserrat",
+            "value": "Montserrat",
             "type": "text"
         },
         {
@@ -144,6 +151,21 @@
             "value": "400",
             "type": "text"
         },
+        {
+            "name": "heroFontWeight",
+            "label": "Hero Font Weight",
+            "group": "Fonts",
+            "note": "Use when your font is not 400",
+            "value": "500",
+            "type": "text"
+        },
+        {
+            "name": "separator",
+            "type": "separator",
+            "label": " ",
+            "group": "Fonts",
+            "size": "smaller"
+         },
         {
             "name": "minFontSize",
             "label": "Minimum font size",

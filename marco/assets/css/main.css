@@ -491,7 +491,7 @@ sup {
     -o-transition: all 0.24s ease-out;
     transition: all 0.24s ease-out;
     display: block;
-    margin: 1rem 0;
+    margin: 0.7rem 0;
 }
 
 .u-icon:hover {
@@ -577,15 +577,23 @@ sup {
     }
 
     .logo {
+        /*
         float: right;
         margin: 2rem 5rem;
+        */
+        max-width: 12rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0 5rem 0 0;
+
     }
 
 }
 
 @media only screen and (min-width: 60em) {
     .logo {
-        max-width: 20rem;
+        max-width: 15rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -593,11 +601,13 @@ sup {
     }
 }
 
-/*
+
 @media only screen and (min-width: 80em) {
-    .logo {}
+    .logo {
+        max-width: 15rem;
+    }
 }
-*/
+
 
 ul.navbar__menu {
     font-weight: 700;
@@ -606,7 +616,7 @@ ul.navbar__menu {
 }
 
 ul.navbar__menu > li {
-    padding: 1rem 0 0 0;
+    padding: 0.7rem 0 0 0;
 }
 
 hr.article__spacer {
@@ -649,7 +659,8 @@ nav a span {
     bottom: 0;
     margin: 0;
     text-align: center;
-    line-height: 1.3em;
+    line-height: 2em;
+    font-weight: 500;
     width: 100%;
     z-index: -10000;
     color: #BBB;
