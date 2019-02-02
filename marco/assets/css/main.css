@@ -553,6 +553,10 @@ sup {
 
 /*Header*/
 
+.logo {
+    text-transform: uppercase;
+}
+
 @media only screen and (min-width: 20em) {
     .navbar {
         margin-left: 3rem;
@@ -563,6 +567,8 @@ sup {
         display: block;
         margin: 2rem auto;
         max-width: 10rem;
+        font-size: 1.5em;
+        text-align: center;
     }
 
     .menu__social {
@@ -586,6 +592,8 @@ sup {
         top: 0;
         right: 0;
         margin: 0 5rem 0 0;
+        font-size: 2em;
+        text-align: right;
 
     }
 
@@ -598,6 +606,7 @@ sup {
         top: 0;
         right: 0;
         margin: 0 5rem 0 0;
+        font-size: 2.5em;
     }
 }
 

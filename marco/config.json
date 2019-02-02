@@ -1,6 +1,6 @@
 {
     "name": "Marco",
-    "version": "1.0.0.1",
+    "version": "1.0.1.0",
     "author": "Joshua Sellke <http://www.sellke.net/>",
     "menus": {
         "mainMenu": "Main menu"
