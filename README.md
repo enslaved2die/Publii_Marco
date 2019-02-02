@@ -2,7 +2,7 @@
 Version: 1.0.1.0
 
 A free simple to use Portfolio Theme for Publii.
-It´s a CSS Grid based Layout designed by my buddy Marco, therefore the name.
+It's a CSS Grid based Layout designed by my buddy Marco, therefore the name.
 He is the one who had the Design idea.
 He is listed in the Credits tab, please check him out, his working is freaking awesome.
 
