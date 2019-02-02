@@ -203,6 +203,14 @@
             "type": "colorpicker"
         },
         {
+            "name": "escapeMenu",
+            "group": "Menu",
+            "note": "Show or hide something like &lt;span&gt; in Menu",
+            "label": "Escape Charakters in Menu",
+            "value": false,
+            "type": "checkbox"
+        },
+        {
             "name": "heroText",
             "label": "Hero text",
             "group": "Hero",
