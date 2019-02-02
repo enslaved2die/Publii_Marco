@@ -10,12 +10,12 @@ Lightbox Support is in the making.
 
 ![Theme Preview Screenshot](ThemePreview.jpg)
 
-###Author
+### Author
 Joshua Sellke [http://www.sellke.net/](http://www.sellke.net/))
 
-###Credits
+### Credits
 * [Marco in the Middle](https://www.instagram.com/marcointhemiddle/)
 
-###Licence
+### Licence
 
 MIT
