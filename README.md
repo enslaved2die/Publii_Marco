@@ -11,7 +11,7 @@ Lightbox Support is in the making.
 ![Theme Preview Screenshot](ThemePreview.jpg)
 
 ### Author
-Joshua Sellke [http://www.sellke.net/](http://www.sellke.net/))
+Joshua Sellke [http://www.sellke.net/](http://www.sellke.net/)
 
 ### Credits
 * [Marco in the Middle](https://www.instagram.com/marcointhemiddle/)
