@@ -1,4 +1,4 @@
-# Publii_Marco
+# Publii Marco Theme
 Version: 1.0.1.0
 
 A free simple to use Portfolio Theme for Publii.
