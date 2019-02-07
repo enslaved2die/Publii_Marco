@@ -6,6 +6,14 @@
     {{/if}}
 </footer>
 </div>{{!-- .container --}}
+{{!-- If the page contains a picture gallery load the Photoswipe Gallery script --}}
+{{#is "post"}}
+    {{#post}}
+        {{#if hasGallery}}
+            {{> photoswipe}}
+        {{/if}}
+    {{/post}}
+{{/is}}
 {{!-- Insert some custom code by Custom HTML tool --}}
 {{{@footerCustomCode}}}
 {{!-- GDPR Cookie popup generated natively by Publii app --}}
