@@ -1,6 +1,6 @@
 {
     "name": "Marco",
-    "version": "1.0.1.0",
+    "version": "1.0.1.2",
     "author": "Joshua Sellke <http://www.sellke.net/>",
     "menus": {
         "mainMenu": "Main menu"
@@ -76,6 +76,27 @@
             "label": "Responsive Images",
             "value": true,
             "type": "checkbox"
+        },
+        {
+            "name": "separator",
+            "type": "separator",
+            "label": " ",
+            "group": "Layout",
+            "size": "smaller"
+         },
+        {
+            "name": "overlayColor",
+            "label": "Overlay color",
+            "group": "Layout",
+            "value": "#000000",
+            "type": "colorpicker"
+        },
+        {
+            "name": "overlayOpacity",
+            "label": "Overlay opacity",
+            "group": "Layout",
+            "value": "0.8",
+            "type": "text"
         },
         {
             "name": "primaryColor",
@@ -392,168 +413,6 @@
                 "value": "true"
             }]
         },
-
-        {
-            "name": "galleryItemGap",
-            "label": "Item spacing",
-            "group": "Gallery",
-            "note": "Use of REM units recommended but you can also use others (px, vw,)",
-            "value": "0.5rem",
-            "type": "text"
-        },
-        {
-            "name": "separator",
-            "type": "separator",
-            "label": " ",
-            "group": "Gallery",
-            "size": "smaller"
-         },
-        {
-            "name": "galleryLightboxStyle",
-            "label": "Lightbox style",
-            "group": "Gallery",
-            "note": "Set the lightbox slideshow style by choosing dark or light overlay",
-            "type": "select",
-            "options": [
-                {
-                    "label": "Dark",
-                    "value": "pswp--dark"
-                },
-                {
-                    "label": "Light",
-                    "value": "pswp--light"
-                }
-            ]
-        },
-        {
-            "name": "galleryLightboxOpacity",
-            "label": "",
-            "group": "Gallery",
-            "note": "Adjust the lightbox overlay transparency",
-            "value": "0.7",
-            "type": "range",
-            "min": 0,
-            "max": 1,
-            "step": 0.01
-        },
-        {
-            "name": "separator",
-            "type": "separator",
-            "label": " ",
-            "group": "Gallery",
-            "size": "smaller"
-         },
-        {
-            "name": "galleryAdvanced",
-            "label": "Advanced lightbox settings",
-            "group": "Gallery",
-            "value": false,
-            "type": "checkbox"
-        },
-        {
-            "name": "galleryCounter",
-            "label": "Current slide / total number",
-            "group": "Gallery",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryZoom",
-            "label": "Zoom in/out button",
-            "group": "Gallery",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryFullscreen",
-            "label": "Toggle fullscreen button",
-            "group": "Gallery",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryShare",
-            "label": "Share button",
-            "group": "Gallery",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryClose",
-            "label": "Close button",
-            "group": "Gallery",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryArrows",
-            "label": "Next / Previous arrows",
-            "group": "Gallery",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryPreloader",
-            "label": "Preloader",
-            "group": "Gallery",
-            "note": "Loading indicator is displayed with 1s delay, so if the photo loads faster it will be invisible.",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryCloseOnScroll",
-            "label": "Close gallery on page scroll",
-            "group": "Gallery",
-            "note": "Option works just for devices without hardware touch support.",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-        {
-            "name": "galleryArrowKeys",
-            "label": "Keyboard navigation",
-            "group": "Gallery",
-            "note": "Keyboard left or right arrow key navigation.",
-            "value": true,
-            "type": "checkbox",
-            "dependencies": [{
-                "field": "galleryAdvanced",
-                "value": "true"
-            }]
-        },
-
-
         {
             "name": "formatDate",
             "label": "Date format",

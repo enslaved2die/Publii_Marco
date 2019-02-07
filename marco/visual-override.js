@@ -23,12 +23,25 @@ var generateOverride = function (params) {
             }
         }`;
     }
+    if (params.overlayColor !== '#000000' || params.overlayColor !== 'black') {
+        output += `
+        .overlay {
+               background: ${params.overlayColor};
+        }`;
+    }
+    if (params.overlayOpacity !== '0.8') {
+        output += `
+        .overlay:hover {
+               opacity: ${params.overlayOpacity};
+        }`;
+    }
 
     if (params.textColor !== '#343434') {
         output += `
         body {
                color: ${params.textColor};
-        }`;
+        }
+`;
     }
 
     if (params.textFont !== 'Montserrat') {
