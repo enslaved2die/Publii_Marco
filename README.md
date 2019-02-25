@@ -1,5 +1,5 @@
 # Publii Marco Theme
-Version: 1.0.1.0
+Version: 1.0.1.2
 
 A free simple to use Portfolio Theme for [Publii.](https://getpublii.com/)  
 It's a CSS Grid based Layout designed by my buddy Marco, therefore the name.  
